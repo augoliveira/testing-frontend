@@ -36,3 +36,7 @@ next-env.d.ts
 
 # content layer
 .contentlayer
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

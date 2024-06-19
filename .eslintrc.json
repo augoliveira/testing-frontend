@@ -33,7 +33,7 @@
     "import-helpers/order-imports": [
       "warn",
       {
-        "newlinesBetween": "always", // Cria uma nova linha para separar as importacoes
+        "newlinesBetween": "always",
         "groups": [
           ["/^react/", "/^next/"],
           "/^contentlayer/",
@@ -41,6 +41,8 @@
           "/^@shared/",
           "absolute",
           "/^@/components/",
+          "/^@/hooks/",
+          "/^@/infra/",
           "/^@/pages/",
           "/utils/",
           "/^@/models/",

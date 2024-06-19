@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-gray-200 text-gray-100">
-        <div className="ml-80 px-8 py-20 text-slate-600">{children}</div>
+        <div className="flex w-full items-center px-8 py-20 text-slate-600">
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ErrorBoundary } from 'react-error-boundary';
 
-import { ErrorFallback } from '@/components/ErrorFallback';
+import { ErrorFallback } from '@/components/error-fallback';
 
 function App({ Component, pageProps }: AppProps) {
   return (
