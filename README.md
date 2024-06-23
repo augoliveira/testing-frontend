@@ -9,7 +9,6 @@
 - 🧑‍🔬 **Cypress** - Fast, easy and reliable testing for anything that runs in a browser.
 - 💅 **TailwindCSS** - Rapidly build modern websites without ever leaving your HTML.
 
-
 ## 🚀 Getting started
 
 The best way to start with this template is to clone this repository and run the following commands inside the project folder:
@@ -26,7 +25,6 @@ To view the project open `http://localhost:3000`.
 3. Commit your changes: `git commit -m 'Add some feature'`;
 4. Push to the branch: `git push origin my-new-feature`.
 
-**After your pull request is merged**, you can safely delete your branch.
----
+## **After your pull request is merged**, you can safely delete your branch.
 
 Made with ♥ by Junior Alves
