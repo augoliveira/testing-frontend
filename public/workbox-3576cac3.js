@@ -163,9 +163,7 @@ define(['exports'], function (exports) {
       return (
         `An unexpected entry was passed to ` +
         `'workbox-precaching.PrecacheController.addToCacheList()' The entry ` +
-        `'${JSON.stringify(
-          entry
-        )}' isn't supported. You must supply an array of ` +
+        `'${JSON.stringify(entry)}' isn't supported. You must supply an array of ` +
         `strings with one or more characters, objects with a url property or ` +
         `Request objects.`
       );
@@ -502,9 +500,8 @@ define(['exports'], function (exports) {
   };
   const isOneOf = (value, validValues, details) => {
     if (!validValues.includes(value)) {
-      details['validValueDescription'] = `Valid values are ${JSON.stringify(
-        validValues
-      )}.`;
+      details['validValueDescription'] =
+        `Valid values are ${JSON.stringify(validValues)}.`;
       throw new WorkboxError('invalid-value', details);
     }
   };
@@ -972,9 +969,7 @@ define(['exports'], function (exports) {
               // and may not make sense without the URL
               logger.groupCollapsed(
                 `Error thrown when responding to: ` +
-                  ` ${getFriendlyURL(
-                    url
-                  )}. Falling back to route's Catch Handler.`
+                  ` ${getFriendlyURL(url)}. Falling back to route's Catch Handler.`
               );
               logger.error(`Error thrown by:`, route);
               logger.error(err);
@@ -999,9 +994,7 @@ define(['exports'], function (exports) {
               // and may not make sense without the URL
               logger.groupCollapsed(
                 `Error thrown when responding to: ` +
-                  ` ${getFriendlyURL(
-                    url
-                  )}. Falling back to global Catch Handler.`
+                  ` ${getFriendlyURL(url)}. Falling back to global Catch Handler.`
               );
               logger.error(`Error thrown by:`, route);
               logger.error(err);
